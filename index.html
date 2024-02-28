@@ -11,11 +11,87 @@
       rel="stylesheet"
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="font-poppins">
     <!-- header section -->
-    <header>
-      <h2 class="text-6xl">Hunting Phone</h2>
+    <header class="container-fluid bg-[#F3F8FF]">
+      <!-- navbar section -->
+      <nav class="container mx-auto md:pt-8">
+        <div class="navbar bg-[#F3F8FF]">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>Product</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-lg sm:text-xl md:text-2xl lg:text-3xl"
+              >Hot Gadgets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a>Home</a></li>
+              <li><a>Product</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn btn-primary text-sm px-2 min-h-8 h-8 md:text-base md:px-6 md:min-h-12 md:h-12"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="relative">
+        <div class="hero h-[70vh] md:items-start bg-[#F3F8FF]">
+          <div class="hero-content text-center">
+            <div class="max-w-md md:max-w-2xl md:mt-8">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                Apple Iphone 13 Pro Max
+              </h1>
+              <p class="py-6">
+                The iPhone 13 Pro Max stands as a breathtaking device that
+                effortlessly captivates with its exceptional and top-tier
+                specifications. One of its standout features lies in its
+                significantly enhanced camera system.
+              </p>
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- banner images -->
+        <div class="hidden md:block h-[60vh] w-full absolute -translate-y-1/2">
+          <img
+            class="block h-full mx-auto object-cover"
+            src="./images/banner.png"
+            alt="banner phones images" />
+        </div>
+      </section>
     </header>
     <!-- main section -->
     <main></main>
